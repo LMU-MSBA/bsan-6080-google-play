@@ -54,20 +54,20 @@ You will provide business insights to our key stakeholders (e.g., Vice President
 
 
 ### Risks & Contingencies: 
-Will Megan single-handedly take down google??
+→ Will Megan single-handedly take down google??
 
-Falling behind on the sprints 
+→ Falling behind on the sprints 
 
-Might have to find a new data set 
+→ Might have to find a new data set 
 
 
 
 ### Terminology: 
-Description of each of the columns
+→ Description of each of the columns
 
-Digital marketing and app field
+→ Digital marketing and app field
 
-Acquisition = installs
+→ Acquisition = installs
 
 
 ### Costs & Benefits: 
