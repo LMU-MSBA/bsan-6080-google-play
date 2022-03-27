@@ -99,7 +99,9 @@ Acquisition = installs
 ### Project Plan: 
 → regular team meetings and shit like that
 
-→ follow sprint schedule → set group deadlines before actual deadlines
+→ follow sprint schedule 
+
+→ set group deadlines before actual deadlines
 
 → prioritize using the Fibonacci Scale
 
