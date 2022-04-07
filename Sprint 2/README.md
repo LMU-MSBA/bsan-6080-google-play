@@ -57,7 +57,7 @@
 |       | score | int64 |
 |       | thumpsUpCount | object |
 |       | reviewCreatedVersion | object |
-|       | at | datetime64 |
+|       | at | object |
 |       | replyContent | object |
 |       | repliedAt | object |
 |       | sortOrder | object |
