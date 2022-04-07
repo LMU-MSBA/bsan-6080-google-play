@@ -7,7 +7,24 @@
 ## 2.2 Task: Describe Data
 ### Data Description Report: 
 → 
- 
+**applications Table (603,047 Rows)**
+| Syntax      | Description | Description |
+| ----------- | ----------- | ----------- |
+| Syntax      | Description | Description |
+| Syntax      | Description | Description |
+| Syntax      | Description | Description |
+| Syntax      | Description | Description |
+| Syntax      | Description | Description |
+| Syntax      | Description | Description |
+| Syntax      | Description | Description |
+| Syntax      | Description | Description |
+| Syntax      | Description | Description |
+| Syntax      | Description | Description |
+
+
+**food_delivery_reviews Table (13,474 Rows)**
+
+**app_reviews Table (12,495 Rows)**
 
 ## 2.3 Task: Explore Data
 ### Data Exploration Report: 
