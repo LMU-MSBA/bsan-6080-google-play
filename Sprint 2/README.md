@@ -51,11 +51,10 @@
 | PK/FK      | Name | Data Type |
 | ----------- | ----------- | ----------- |
 |   PK    | review_id | object |
-|       | usernNme | object |
+|       | userName | object |
 |       | userImage | object |
 |       | content | int64 |
 |       | score | int64 |
-|       | up_count | int64 |
 |       | thumpsUpCount | object |
 |       | reviewCreatedVersion | object |
 |       | at | datetime64 |
