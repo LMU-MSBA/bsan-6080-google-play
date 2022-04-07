@@ -8,7 +8,7 @@
 ### Data Description Report: 
  
 **applications Table (603,047 Rows)**
-| Syntax      | Description | Description |
+| PK/FK      | Name | Data Type |
 | ----------- | ----------- | ----------- |
 |       | app_name | object |
 | PK      | app_id | object |
@@ -33,8 +33,37 @@
 
 
 **food_delivery_reviews Table (13,474 Rows)**
+| PK/FK      | Name | Data Type |
+| ----------- | ----------- | ----------- |
+|   PK    | review_id | object |
+|       | username | object |
+|       | userimage | object |
+|       | review_text | object |
+|       | rating | int64 |
+|       | up_count | int64 |
+|       | review_created_version | object |
+|       | reply_text | object |
+|       | reply_date | datetime64 |
+|       | sort_order | object |
+|   FK    | app_id | object |
 
 **app_reviews Table (12,495 Rows)**
+| PK/FK      | Name | Data Type |
+| ----------- | ----------- | ----------- |
+|   PK    | review_id | object |
+|       | usernNme | object |
+|       | userImage | object |
+|       | content | int64 |
+|       | score | int64 |
+|       | up_count | int64 |
+|       | thumpsUpCount | object |
+|       | reviewCreatedVersion | object |
+|       | at | datetime64 |
+|       | replyContent | object |
+|       | repliedAt | object |
+|       | sortOrder | object |
+|   FK    | app_id | object |
+
 
 ## 2.3 Task: Explore Data
 ### Data Exploration Report: 
