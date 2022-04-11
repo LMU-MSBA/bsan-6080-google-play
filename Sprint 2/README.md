@@ -1,7 +1,11 @@
 # Sprint 2 - Data Understanding
 ## 2.1 Task: Collect Initial Data
 ### Initial Data Collection Report: 
-→
+→ Google Reviews Scrape: https://colab.research.google.com/drive/1jLlPrux8C4x_kxdt5lzTnD3LxnIRpkC5?usp=sharing
+
+→ Food Delivery App Reviews Scraping: https://colab.research.google.com/drive/15MfyTemDVcDCmTipgLCaMS_RIAUepJuH?usp=sharing
+
+→ Kaggle Google Play Store Apps: https://www.kaggle.com/datasets/gauthamp10/google-playstore-apps
 
 
 ## 2.2 Task: Describe Data
