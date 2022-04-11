@@ -34,6 +34,8 @@
 |       | ad_supported | bool |
 |       | in_app_purchases | bool |
 |       | editors_choice | bool |
+|       | updated_date | datetime64 |
+|       | estimated_installs | int64 |
 
 
 **food_delivery_reviews Table (13,474 Rows)**
