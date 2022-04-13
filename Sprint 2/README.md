@@ -72,13 +72,22 @@
 
 ## 2.3 Task: Explore Data
 ### Data Exploration Report: 
-→  
+→  Data Quality and Data Exploration included in same Python notebooks
+Kaggle Google Playstore: https://colab.research.google.com/drive/1Nk2vDVvqLUrBaeQooCGDI6F0QJtTJdJB?usp=sharing
 
+Food Delivery App Reviews Scraping: https://colab.research.google.com/drive/15MfyTemDVcDCmTipgLCaMS_RIAUepJuH?usp=sharing
+
+Google Reviews Scrape: https://colab.research.google.com/drive/1jLlPrux8C4x_kxdt5lzTnD3LxnIRpkC5?usp=sharing
 
 ## 2.4 Task: Verify Data Quality
 
 ### Data Quality Report: 
-→ 
+→ Data Quality and Data Exploration included in same Python notebooks
+Kaggle Google Playstore: https://colab.research.google.com/drive/1Nk2vDVvqLUrBaeQooCGDI6F0QJtTJdJB?usp=sharing
+
+Food Delivery App Reviews Scraping: https://colab.research.google.com/drive/15MfyTemDVcDCmTipgLCaMS_RIAUepJuH?usp=sharing
+
+Google Reviews Scrape: https://colab.research.google.com/drive/1jLlPrux8C4x_kxdt5lzTnD3LxnIRpkC5?usp=sharing
  
 
 
