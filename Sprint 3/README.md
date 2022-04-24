@@ -3,7 +3,9 @@
 # Data Preparation Phase 
 ## 3.1 Task: Select Data
 ### Rationale for Inclusion/Exclusion: 
-→ 
+→ Columns that did not have relevance to the analysis were dropped
+    -Columns including: Developer Email, Privacy Policy, and Developer Website
+        -Columns with extra information like Developer contact info is extra data that could be removed
 
 ## 3.2 Task: Clean Data 
 ### Data Cleaning Report: 
