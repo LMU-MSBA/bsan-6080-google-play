@@ -46,6 +46,7 @@
 ## 3.5 Task: Format Data
 ### Reformatted Data: 
 → **AWS RDS database connection details**: aws_rds_db.txt file in Github
+→ **Data Preparation Python Code**: data_preparation.ipynb file in Github
 
 **Exploratory SQL using AWS Postgres Database**
 
