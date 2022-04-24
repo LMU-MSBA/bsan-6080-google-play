@@ -3,9 +3,14 @@
 # Data Preparation Phase 
 ## 3.1 Task: Select Data
 ### Rationale for Inclusion/Exclusion: 
-→ Columns that did not have relevance to the analysis were dropped (Developer Email, Privacy Policy, and Developer Website)
+→ Columns that did not have relevance to the analysis were dropped (**Developer Email, Privacy Policy, and Developer Website**)
 
-        -Columns with extra information like Developer contact info is extra data that could be removed
+→ Columns with extra information like Developer contact info is extra data that could be removed
+
+→ Columns with numeric values and columns that provided insights into potential app KPIs were kept in the analysis in order to explore further how to evaluate app performance (**Price, Rating, Rating Count, etc.**)
+
+→ Even though there are many features remaining, we wanted to keep a substantial number of features in order to have enough variables to construct meaningful dashboards
+
 
 ## 3.2 Task: Clean Data 
 ### Data Cleaning Report: 
