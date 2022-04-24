@@ -106,7 +106,7 @@
 # Evaluation Phase 
 ## 5.1 Task: Evaluate Results 
 ### Assessment of Results in terms of Business Success Criteria: 
-### Approved Model(s)
+### Approved Model(s):
 → 
 
 ## 5.2 Task: Review Process
