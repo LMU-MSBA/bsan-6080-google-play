@@ -38,10 +38,6 @@
 
 
 ### Business Objectives: 
-* **Product Design**: 
-
-
-* **Marketing**:
 
 
 ### Business Success Criteria
@@ -49,16 +45,7 @@
 
 ## 1.2 Assess Situation [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 ### Inventory of resources
-**Personnel**: 
 
- 
-**Data**:
-
- 
-**Computing resources**:
-
- 
-**Software**:
 
  
 ### Requirements, assumptions, and constraints
@@ -67,32 +54,13 @@
 ### Comprehensibility:
 
  
-**Quality of results:**
-
- 
-**Security:**
-
-
-**Legal issues:**
-
- 
 ### Risks and contingencies
 
  
 ### Terminology
-**Business Understanding**
-
-
  
-**Data Mining**
 
 ### Costs and benefits
-**Expected Costs:**
-
-
-
-**Expected benefits:**
-
 
 
 ## 1.3 Determine Data Mining Goals [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
@@ -104,61 +72,6 @@
 
 
 ## 1.4 Produce Project Plan [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
-
-
-* Sprint 0: Project Proposal (Expected Completion Date: 03/15/2022)
-	
-	Deliverables: 
-Project proposal
-Job post
-
-This Sprint has been completed and a GitHub Repository for the project has been created.
-
-* Sprint 1: Business Understanding (Expected Completion Date: 03/29/2022)
-	
-	Deliverables: 
-Documented CRISP-DM Business Understanding Tasks and Outputs
-Create and Update Trello Board
-
-In order to complete this sprint all team members must first create Trello accounts, so that all members have access to a central Trello board for this project. Additionally, a meeting will be necessary to breakdown and discuss specific tasks that need to be done to complete Business Understanding CRISP-DM documentation.
-
-* Sprint 2: Data Understanding (Expected Completion Date: 04/12/2022)
-	
-	Deliverables: 
-Documented CRISP-DM Data Understanding Tasks and Outputs
-Data Collection Jupyter Notebook (data_collection.ipynb)
-Exploratory Data Analysis Jupyter Notebook (eda.ipynb)
-Update Trello Board
-
-As we plan to analyze User Generated Content from Twitter, we plan to use Jupyter Notebooks and a simple Twitter API calls to extract the data (tweets) that will be necessary for the project. Additionally, a meeting will be necessary to breakdown and discuss the specific tasks that need to be done to complete Data Understanding CRISP-DM documentation.
-
-
-* Sprint 3: Data Preparation, Modeling, Evaluation (Expected Completion Date: 04/26/2022)
-	
-	Deliverables:
-Documented CRISP-DM Data Preparation, Modeling, and Evaluation Tasks and Outputs
-Data Preparation Jupyter Notebook (data_preparation.ipynb)
-Machine Learning Models Jupyter Notebook (models.ipynb)
-Machine Learning Models Saved as Pickle Files
-Update Trello Board
-AWS Database Connection Details (aws_db_project_name.txt)
-
-For Sprint 3, we will continue to utilize Jupyter Notebooks for both prepping our data for the model and to run the BERT model that we plan to use to analyze the Tweets. Additionally, we plan to run K-Means Clustering analysis that will also be done with Python to run a thorough marketing analysis on the data that will allow us to segment, target, and position ReMarkable. According to the model assessment, we will revise parameter settings and tune them for different iterations. We will continue to model until we believe we have found the best model and clustering. All iterations (revisions and assessments) will be documented in Trello.
-
-This workload may seem unachievable for one Sprint, but with the BERT model already available to us, this will likely be possible to complete in a timely manner. Lastly, a meeting will be necessary to breakdown and discuss the specific tasks that need to be done to complete Data Preparation, Modeling, and Evaluation CRISP-DM documentation.
-
-* Sprint 4: Deployment (Expected Completion Date: 05/06/2022)
-	
-	Deliverables:
-Documented CRISP-DM Deployment Tasks and Outputs
-Dashboards
-Machine Learning API URL Endpoint
-Slides (presentation.pdf)
-Update Trello Board
-Peer Evaluation
-Q&A 
-
-
 
 # Sprint 2: 
 # Data Understanding Phase
