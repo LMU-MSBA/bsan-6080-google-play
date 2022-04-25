@@ -107,7 +107,11 @@
 ## 3.1 Select Data [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 For all of our datasets, there were many variables that were not pertinent to our analysis. Therefore, we removed them to keep our attention on the relevant variables only. The table below indicates which variables were dropped from their respective datasets.
 
-Insert Table here!!!
+| Dataset | Removed Variables |
+| --- | --- |
+| Google Play Store Kaggle | Developer Email, Privacy Policy, and Developer Website |
+| Google Play Store Reviews | Username, User Image, Review Created Version, and Sort Order |
+| Google Play Store Food Reviews | Review Id, Username, User Image, Review Created Version, and Sort Order |
 
 For our Google Play Store Kaggle Dataset, our inclusion criteria was based on potential to evaluate how apps on Google Play Store as a whole compare to apps in the Food Delivery Category. While we could have removed more than what we did, we wanted to make sure to keep enough features to construct meaningful comparison dashboards.
 
