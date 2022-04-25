@@ -110,7 +110,7 @@ For all of our datasets, there were many variables that were not pertinent to ou
 | Dataset | Removed Variables |
 | --- | --- |
 | Google Play Store Kaggle | Developer Email, Privacy Policy, Developer Website |
-| Google Play Store Reviews | Username, User Image, Review Created Version, Sort Order |
+| Google Play Store Reviews | Review Id, Username, User Image, Review Created Version, Sort Order |
 | Google Play Store Food Reviews | Review Id, Username, User Image, Review Created Version, Sort Order |
 
 For our Google Play Store Kaggle Dataset, our inclusion criteria was based on potential to evaluate how apps on Google Play Store as a whole compare to apps in the Food Delivery Category. While we could have removed more than what we did, we wanted to make sure to keep enough features to construct meaningful comparison dashboards.
