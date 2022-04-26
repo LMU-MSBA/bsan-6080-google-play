@@ -385,6 +385,73 @@ To assess model performance, we used accuracy, precision, recall, F1 score, and 
 # Evaluation Phase
 ## 5.1 Evaluate Results [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 
+Google Play Store Reviews - ML Results
+
+w/ CV
+| Metric | Logistic Regression | Support Vector Classifier | Decision Tree | Random Forest | Multinomial Naive Bayes | Best Score |
+| --- | --- | --- | --- | --- | --- | --- |
+|Accuracy	|0.848580	|0.858044	|0.832808	|0.842271	|0.823344	|Support Vector Classifier|
+|Precision	|0.853333	|0.856209	|0.858156	|0.893939	|0.781609	|Random Forest|
+|Recall		|0.831169	|0.850649	|0.785714	|0.766234	|0.883117	|Multinomial Naive Bayes|
+|F1 Score	|0.842105	|0.853420	|0.820339	|0.825175	|0.829268	|Support Vector Classifier|
+|AUC		|0.848100	|0.857840	|0.831507	|0.840172	|0.824994	|Support Vector Classifier|
+
+w/ TFIDF
+| Metric | Logistic Regression | Support Vector Classifier | Decision Tree | Random Forest | Multinomial Naive Bayes | Best Score |
+| --- | --- | --- | --- | --- | --- | --- |
+|Accuracy	|0.813880	|0.845426	|0.801262	|0.810726	|0.820189	|Support Vector Classifier|
+|Precision	|0.814570	|0.830189	|0.809524	|0.856061	|0.783626	|Random Forest|
+|Recall		|0.798701	|0.857143	|0.772727	|0.733766	|0.870130	|Multinomial Naive Bayes|
+|F1 Score	|0.806557	|0.843450	|0.790698	|0.790210	|0.824615	|Support Vector Classifier|
+|AUC		|0.813461	|0.845749	|0.800474	|0.808601	|0.821568	|Support Vector Classifier|
+
+The above tables show the performance of each machine learning model when utilizing either Countvectorizer or TF-IDF vectorizer in predicting “high risk” reviews. For each field, the highest accuracy, precision, recall, F1-score, and AUC metrics are indicated by the “Best Score” column. The highest-performing model for each field fell mostly between the range of 0.7 to 9.0, reflecting relatively accurate classification. For the Google Play Store Reviews dataset, the Support Vector Classifier, with count vectorizer, was the best model for predicting “high risk” reviews with an AUC of 0.858 and all other scores falling around 0.85.
+
+Google Play Store Reviews - DL Results
+| Metric | BERT	| glove	| word2vec | fasttext | Best Score |
+| --- | --- | --- | --- | --- | --- |
+|Accuracy	|0.955932	|0.831978	|0.845528	|0.867209	|BERT|
+|Precision	|0.959184	|0.781250	|0.677778	|0.721519	|BERT|
+|Recall		|0.952703	|0.510204	|0.685393	|0.678571	|BERT|
+|F1 Score	|0.955932	|0.617284	|0.681564	|0.699387	|BERT|
+|AUC		|0.955943	|0.729272	|0.790911	|0.800689	|BERT|
+
+The table above shows the performance of each deep learning model for predicting “high risk” reviews. The highest-performing model for each field fell mostly between the range of 0.7 to 9.0, reflecting relatively accurate classification. For the Google Play Store Reviews dataset, BERT was by far the best model for predicting “high risk” reviews with an AUC of 0.956 and all other scores falling around 0.95.
+
+Food Delivery Reviews Dataset - ML Results
+
+w/ CV
+| Metric | Logistic Regression | Support Vector Classifier | Decision Tree | Random Forest | Multinomial Naive Bayes | Best Score |
+| --- | --- | --- | --- | --- | --- | --- |
+|Accuracy	|0.848580	|0.858044	|0.839117	|0.845426	|0.823344	|Support Vector Classifier|
+|Precision	|0.853333	|0.856209	|0.860140	|0.888889	|0.781609	|Random Forest|
+|Recall		|0.831169	|0.850649	|0.798701	|0.779221	|0.883117	|Multinomial Naive Bayes|
+|F1 Score	|0.842105	|0.853420	|0.828283	|0.830450	|0.829268	|Support Vector Classifier|
+|AUC		|0.848100	|0.857840	|0.838001	|0.843598	|0.824994	|Support Vector Classifier|
+
+w/ TFIDF
+| Metric | Logistic Regression | Support Vector Classifier | Decision Tree | Random Forest | Multinomial Naive Bayes | Best Score |
+| --- | --- | --- | --- | --- | --- | --- |
+|Accuracy	|0.813880	|0.845426	|0.807571	|0.794953	|0.820189	|Support Vector Classifier|
+|Precision	|0.814570	|0.830189	|0.800000	|0.829630	|0.783626	|Support Vector Classifier|
+|Recall		|0.798701	|0.857143	|0.805195	|0.727273	|0.870130	|Multinomial Naive Bayes|
+|F1 Score	|0.806557	|0.843450	|0.802589	|0.775087	|0.824615	|Support Vector Classifier|
+|AUC		|0.813461	|0.845749	|0.807505	|0.793084	|0.821568	|Support Vector Classifier|
+
+Running the same models on the Food Delivery Reviews dataset garnered very similar results. The highest-performing model for each field fell mostly between the range of 0.7 to 9.0, reflecting relatively accurate classification. The Support Vector Classifier, with count vectorizer, was again the best model for predicting “high risk” reviews with an AUC of 0.858 and all other scores falling around 0.85. 
+
+Food Delivery Reviews Dataset - DL Results
+| Metric | BERT	| glove	| word2vec | fasttext | Best Score |
+| --- | --- | --- | --- | --- | --- |
+|Accuracy	|0.955932	|0.831978	|0.875339	|0.829268	|BERT|
+|Precision	|0.959184	|0.818182	|0.784946	|0.696203	|BERT|
+|Recall		|0.952703	|0.463918	|0.737374	|0.585106	|BERT|
+|F1 Score	|0.955932	|0.592105	|0.760417	|0.635838	|BERT|
+|AUC		|0.955943	|0.713576	|0.831650	|0.748917	|BERT|
+
+The table above shows the performance of each deep learning model for predicting “high risk” reviews in the Food Delivery Reviews dataset. Similar to the Google Play Store Reviews dataset, the highest-performing model for each field fell mostly between the range of 0.7 to 9.0, reflecting relatively accurate classification. BERT again was by far the best model for predicting “high risk” reviews with an AUC of 0.956 and all other scores falling around 0.95.
+
+In conclusion, we were able to find a model that performed extremely well for both datasets, with scores all above .95. This reflects our ability to classify “high risk” reviews accurately.
 
 ## 5.2 Review Process [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 
