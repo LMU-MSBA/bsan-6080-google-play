@@ -111,16 +111,18 @@ For all of our datasets, there were many variables that were not pertinent to ou
 | --- | --- |
 | Google Play Store Kaggle | Developer Email, Privacy Policy, Developer Website |
 | Google Play Store Reviews | Review Id, Username, User Image, Review Created Version, Sort Order |
-| Google Play Store Food Reviews | Review Id, Username, User Image, Review Created Version, Sort Order |
+| Google Play Store Food Delivery Reviews | Review Id, Username, User Image, Review Created Version, Sort Order |
 
 For our Google Play Store Kaggle Dataset, our inclusion criteria was based on potential to evaluate how apps on Google Play Store as a whole compare to apps in the Food Delivery Category. While we could have removed more than what we did, we wanted to make sure to keep enough features to construct meaningful comparison dashboards.
 
-For our Google Play Store Reviews Dataset and our Google Play Store Food Reviews Dataset, our inclusion criteria was based on variables that could lead to insights or impact the review being “high risk.” As we were only interested in the review characteristics and the text itself, we dropped columns with user information or unrelated review information.
+For our Google Play Store Reviews and Google Play Store Food Delivery Reviews Datasets, our inclusion criteria was based on variables that could lead to insights or impact a review being classified as “high risk.” As we were only interested in the review characteristics and the text itself, we dropped columns with user information or unrelated review information.
 
 ## 3.2 Clean Data [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
-Even though the main dataset we pulled from Kaggle was fairly clean, we needed to conduct some additional cleaning. First, null values needed to be accounted for. Blanks and values that represented missing values were interpolated or coerced to np.nan in order to allow for calculations. Additionally, the date values needed to be updated into proper datetime format from Unix date time, as datetime format is more easily understood.
+After selecting our data, we moved forward with the data cleaning process. Even though the main dataset we pulled from Kaggle was fairly clean, we needed to conduct some additional cleaning. First, null values needed to be addressed. Blanks and values that represented missing values were interpolated or coerced to np.nan in order to allow for calculations. Additionally, the date values needed to be updated from Unix date time into proper datetime format, as datetime format is more easily understood.
 
-Our Google Play Store Reviews dataset and our scraped Google Play Store Food Delivery Reviews dataset were also both relatively clean. However, similar to the Kaggle dataset there were issues with the date variables. Both the review date and reply date columns were an object data type. To correct this we re-read the data and used the date parser available through pandas read_csv(). As a part of data cleaning, text pre-processing was also required before feature engineering and modeling could  take place. Text pre-processing is used to bring a standard format to the text. This standardization across a document corpus helps build meaningful features and reduce noise that can be instigated by certain text components, such as irrelevant symbols or special characters. To do this we created a series of functions that would convert all words to lowercase, strip and remove punctuation, remove stop words, lemmatize the text, map NLTK position tags, and put the clean version of the review text into a new variable called “clean_text.”
+Our Google Play Store Reviews and our scraped Google Play Store Food Delivery Reviews datasets were both relatively clean as well. However, similar to the main dataset there were issues with date variables. Both the review date and reply date columns were object data types. To correct this we re-read the data using the date parser available through pandas read_csv(). At this stage we also decided to rename some of the variables into easier to understand or easier to code with names. The null values in this dataset did not concern us, as values were only missing from the reply text and reply date variables. This indicated that there was not a reply from the app owner to the reviewer, which makes sense.
+
+As a part of data cleaning, text pre-processing was also required before modeling could take place. Text pre-processing is used to bring a standard format to the text. This standardization across a document corpus helps build meaningful features and reduce noise that can be instigated by certain text components, such as irrelevant symbols or special characters. To do this, we created a series of functions that would convert all words to lowercase, strip and remove punctuation, remove stop words, lemmatize the text, map NLTK position tags, and put the clean version of the review text into a new variable called “clean_text”. The functions we created are displayed below.
 
 ```
 #convert to lowercase, strip and remove punctuations
@@ -171,22 +173,55 @@ df.head(2)
 ```
 
 ## 3.3 Construct Data [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
-Google Play Store Kaggle Dataset:
-Minimum installs and maximum install values were provided in the data, but to get an approximate and more specific installs number we created a new value to interpolate the values and create an estimated installs field that we can use in our analysis. Originally we tried creating an estimated value by taking min+max / 2, but after further consideration we determined interpolating the values would be a more accurate and appropriate way to represent estimates.
+In our main Google Play Store dataset, minimum installs and maximum install values were provided in the data, but to get an approximate and more specific install number we created a new value to interpolate the values and create an estimated installs field that we can use in our analysis. Originally, we tried creating an estimated value by taking min+max / 2, but after further consideration we determined interpolating the values would be a more accurate and appropriate way to represent estimates.
 
-Google Play Store Reviews Dataset & Google Play Store Food Delivery Reviews:
-In order to conduct our analysis. We needed to create criteria on which we would base whether a review was “high risk.” Ultimately, we determined that a “high risk” review would have a low rating, a polarity less than 0, and a subjectivity score greater than 0.5. A negative polarity indicates negative review sentiment. Higher subjectivity means that the text contains personal opinion rather than factual information. We created a binary variable called “high_risk_review,” where if the review met all of the criteria it would display a 1, else a 0.
+For our Google Play Store Reviews and Google Play Store Food Delivery Reviews datasets, in order to conduct our analysis, we needed to create criteria on which we would base whether a review was “high risk” or not. We determined that a “high risk” review would have a low rating (a rating of 1 or 2), a polarity less than 0, and a subjectivity score greater than 0.5. A negative polarity indicates negative review sentiment. Higher subjectivity means that the text contains personal opinion rather than factual information. We created a binary variable called “high_risk_review,” where if the review met all of the criteria it would display a 1, else a 0. We felt this variable would give us a good representation of high risk reviews. We also felt it was very tailorable to fit the needs of an app owner, perhaps they want to be more or less strict on what they consider to be a “high risk” review.
 
-After creating the “high_risk_review” variable, we then checked the balance of the variable as that would be used as our label column in our analysis. We discovered it was very unbalanced and used undersampling to correct it. After mitigating the skewness, we were not ready to start modeling.
-
+After creating the “high_risk_review” variable, we then checked the balance of the variable as it would be used as our label column in our analysis. We discovered it was very unbalanced. To correct this we used undersampling. After mitigating the skewness, we were now ready to start modeling.
 
 ## 3.4 Integrate Data [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
-
-
+Main tables in the database are:
+* applications
+* food_delivery_reviews
+* App_reviews
 
 ## 3.5 Format Data [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
+AWS RDS database connection details: aws_rds_db.txt file in Github 
+
+Exploratory SQL using AWS Postgres Database:
+```
+-- Explore tables
+SELECT *
+FROM applications
+;
+
+SELECT *
+FROM app_reviews
+;
+
+SELECT *
+FROM food_delivery_reviews
+;
 
 
+-- Demonstrate JOINS 
+
+-- JOIN applications with food_delivery_reviews (using doordash as an example)
+SELECT *
+FROM applications a 
+LEFT JOIN food_delivery_reviews f
+	ON a.app_id = f.app_id
+WHERE a.app_id = 'com.dd.doordash'
+;
+
+-- JOIN applications with app_reviews (using com.anydo as an example)
+SELECT *
+FROM applications a 
+LEFT JOIN app_reviews r 
+	ON a.app_id = r.app_id
+WHERE a.app_id = 'com.anydo'
+;
+```
 
 # Modeling Phase
 ## 4.1 Selecting Modeling Techniquies [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
