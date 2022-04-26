@@ -380,10 +380,7 @@ def models_evaluation(model_1, model_2, model_3):
 Through the use of these functions, were successfully able to run and compare 9 models in order to find a well performing one to create a sentiment monitoring system.
 
 ## 4.4 Assess Model [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
-To assess model performance, we used accuracy, precision, recall, F1 score, and AUC as our performance metrics. The main metric we will use to determine the success of our model is AUC. AUC values between 0.9-1 we will consider excellent, AUC values between 0.8-0.9 we will consider good, AUC values between 0.7-0.8 we will consider fair, AUC values between 0.6-0.7 are poor, and any AUC values below 0.6 we will consider failed. Ideally, we would like to see a model performing in the range of 0.8-1 for all metrics.
-
-# Evaluation Phase
-## 5.1 Evaluate Results [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
+As mentioned previously, our goal was to find a model that could accurately predict “high risk” reviews based on text alone in order to build a sentiment monitoring system. Below are the resulting comparison tables created from running our models.
 
 Google Play Store Reviews - ML Results
 
@@ -453,9 +450,29 @@ The table above shows the performance of each deep learning model for predicting
 
 In conclusion, we were able to find a model that performed extremely well for both datasets, with scores all above .95. This reflects our ability to classify “high risk” reviews accurately.
 
-## 5.2 Review Process [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
+
+# Evaluation Phase
+## 5.1 Evaluate Results [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 We were able to create a machine learning model that predicts whether or not a review is considered “high-risk” and therefore needs to be responded to. This will allow for valuable insights to be generated for an app developer and allow that developer to address potential risks to ratings and app perception in a timely manner. 
 
 Coupled with our predictive model, we will also showcase descriptive analytics displayed in operational and analytical dashboards that will likewise showcase valuable insights to the app developer. All of this will promote the business and role of a Business Analyst for Play Partnerships at Google.
 
+## 5.2 Review Process [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
+* The first step of our process was to collect the necessary data for the text sentiment analysis and the EDA that was needed for the future steps and analyses in the project
+* The next step of our process consisted of cleaning and preparing the data for analysis 
+* Following the data cleaning, we built the models needed for analyzing both the general Google Play Store environment as well as the text sentiment analysis
+* After building the models we revisited how we can use the outputs in order to create dashboards that would be meaningful to a client or business partner / app developer
+* From here we came to conclusions that some of our original questions may need to change slightly and the direction we want to go will have to be pivoted 
+* We learned that the datasets may not fully achieve the goals we originally set out and to achieve a granular look like we originally desired, we may need to change either our goals or how we approach the data 
+* Once we determined the revised goals and came to a conclusion on how we want to use our outputs we set out on creating the dashboards and providing valuable insights from our data 
+
 ## 5.3 Determine Next Steps [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
+
+Next Steps:
+* Finalize dashboards for business insights
+* Evaluate dashboards in order to discern what recommendations we should offer
+* Evaluate how the ML and Deep Learning models can be improved and developed further by the client to provide a fuller picture from the analysis 
+* Construct final report that includes all insights, recommendations, and future action items 
+* Construct final presentation materials such as slides and examples of dashboards for the final deliverable
+* Review project to see where improvements can be made in the process and execution of tasks in the future
+* Continue tuning the model and the criteria based on success
