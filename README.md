@@ -225,7 +225,7 @@ WHERE a.app_id = 'com.anydo'
 
 # Modeling Phase
 ## 4.1 Selecting Modeling Techniquies [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
-For model selection, our goal was to find the best model for predicting high risk reviews based on text alone. Keeping our end goal in mind of finding the most effective model for building a sentiment monitoring system. In order to do this, we tested across many machine learning and deep learning classifier models. For our machine learning models, we included Logistic Regression, Support Vector, Decision Tree, Random Forest, and Multinomial Naive Bayes classifiers. For all the machine learning classifier models, we ran for both count vectorizer and TF-IDF vectorizer. For our deep learning models, we included BERT, Glove, Word2Vec, and FastText.
+For model selection, our goal was to find the best model for predicting “high risk” reviews based on the review text alone. As our goal was to find the most effective model for building a sentiment monitoring system, we tested across as many machine learning and deep learning classifier models as we could. For our machine learning models, we included Logistic Regression, Support Vector, Decision Tree, Random Forest, and Multinomial Naive Bayes classifiers. For all the machine learning classifier models, we ran for both count vectorizer and TF-IDF vectorizer. For our deep learning models, we included BERT, Glove, Word2Vec, and FastText.
 
 ## 4.2 Generate Test Design [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 
