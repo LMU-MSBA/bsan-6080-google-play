@@ -231,7 +231,153 @@ For model selection, our goal was to find the best model for predicting “high 
 To measure the success of supervised models, we will assess model performance using accuracy, precision, recall, F1 score, and AUC as our performance metrics. The main metric we will use to determine the success of our model is AUC. AUC values between 0.9-1 we will consider excellent, AUC values between 0.8-0.9 we will consider good, AUC values between 0.7-0.8 we will consider fair, AUC values between 0.6-0.7 are poor, and any AUC values below 0.6 we will consider failed. Ideally, we would like to see a model performing in the range of 0.8-1 for all metrics. However, to conclude that the overall model is successful we would also like to see scores in the range of 0.7 to 1 in all the other metric categories.
 
 ## 4.3 Build Model [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
-As we were testing many different models in our analysis, we tried our best to streamline testing by creating functions that would run and compare the models for us. For our machine learning models, we created a function that would accept X, y, and a type of vectorizer, run a series of predefined classifier models, calculate metric scores, compare the scores in a table, and indicate in the table which model had the best score for each metric. The function used and an example of a resulting table is shown below.
+As we were testing many different models in our analysis, we tried our best to streamline testing by creating functions that would run and compare the models for us. While they took some time to build, it saved us time in the long run to build, run, and compare the models separately.
+
+For our machine learning models, we created a function that would accept X, y, and a type of vectorizer, run a series of predefined classifier models, calculate metric scores, compare the scores in a table, and indicate in the table which model had the best score for each metric. We ran our machine learning models which included Logistic Regression, Support Vector, Decision Tree, Random Forest, and Multinomial Naive Bayes classifiers. For all the machine learning classifier models, we ran for both count vectorizer and TF-IDF vectorizer.
+ 
+```
+def models_evaluation(X, y, vect):
+
+    # splitting the data
+    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
+
+    # create document-term matrices using the vectorizer
+    X_train_dtm = vect.fit_transform(X_train)
+    X_test_dtm = vect.transform(X_test)
+
+    # perform each machine learning classifier
+    # use selected model to predict the high or low star rating
+    log_model.fit(X_train_dtm, y_train)
+    log = y_pred_class = log_model.predict(X_test_dtm)
+
+    svc_model.fit(X_train_dtm, y_train)
+    svc = y_pred_class = svc_model.predict(X_test_dtm)
+
+    dtr_model.fit(X_train_dtm, y_train)
+    dtr = y_pred_class = dtr_model.predict(X_test_dtm)
+
+    rfc_model.fit(X_train_dtm, y_train)
+    rfc = y_pred_class = rfc_model.predict(X_test_dtm)
+
+    mnb_model.fit(X_train_dtm, y_train)
+    mnb = y_pred_class = mnb_model.predict(X_test_dtm)
+
+    # create a data frame with the models perfoamnce metrics scores
+    models_scores_table = pd.DataFrame({'Logistic Regression':[accuracy_score(y_test,log).mean(),
+                                                               precision_score(y_test,log).mean(),
+                                                               recall_score(y_test,log).mean(),
+                                                               f1_score(y_test,log).mean(),
+                                                               roc_auc_score(y_test,log).mean()],
+                                       
+                                      'Support Vector Classifier':[accuracy_score(y_test,svc).mean(),
+                                                                   precision_score(y_test,svc).mean(),
+                                                                   recall_score(y_test,svc).mean(),
+                                                                   f1_score(y_test,svc).mean(),
+                                                                   roc_auc_score(y_test,svc).mean()],
+                                       
+                                      'Decision Tree':[accuracy_score(y_test,dtr).mean(),
+                                                       precision_score(y_test,dtr).mean(),
+                                                       recall_score(y_test,dtr).mean(),
+                                                       f1_score(y_test,dtr).mean(),
+                                                       roc_auc_score(y_test,dtr).mean()],
+                                       
+                                      'Random Forest':[accuracy_score(y_test,rfc).mean(),
+                                                       precision_score(y_test,rfc).mean(),
+                                                       recall_score(y_test,rfc).mean(),
+                                                       f1_score(y_test,rfc).mean(),
+                                                       roc_auc_score(y_test,rfc).mean()],
+                                       
+                                      'Multinomial Naive Bayes':[accuracy_score(y_test,mnb).mean(),
+                                                              precision_score(y_test,mnb).mean(),
+                                                              recall_score(y_test,mnb).mean(),
+                                                              f1_score(y_test,mnb).mean(),
+                                                              roc_auc_score(y_test,mnb).mean()]},
+                                      
+                                      index=['Accuracy', 'Precision', 'Recall', 'F1 Score', 'AUC'])
+    
+    # add 'Best Score' column
+    models_scores_table['Best Score'] = models_scores_table.idxmax(axis=1)
+    
+    # return models performance metrics scores data frame
+    return(models_scores_table)
+```
+
+For our deep learning models, we included BERT, Glove, Word2Vec, and FastText. Similar to our machine learning models we created a function that would accept three models, calculate metric scores, and create a score comparison table indicating which model performed the best along each metric. We ran the BERT model separately, as it was a different process than the other models. However, we then created another comparison table to compare BERT along with the other models all together.
+
+```
+def models_evaluation(model_1, model_2, model_3):
+
+    #MODEL_1
+    # transform text into vectors
+    vectors_1 = model_1.transform(review_text)
+
+    # split data into training and test portions
+    X_train_1, X_test_1, y_train_1, y_test_1 = train_test_split(vectors_1, high_low)
+
+    # train machine learning model
+    clf = MLPClassifier()
+    clf_1 = clf.fit(X_train_1, y_train_1)
+
+    # output machine learning model performance
+    predictions_1 = clf_1.predict(X_test_1)
+
+    #MODEL_2
+    # transform text into vectors
+    vectors_2 = model_2.transform(review_text)
+
+    # split data into training and test portions
+    X_train_2, X_test_2, y_train_2, y_test_2 = train_test_split(vectors_2, high_low)
+
+    # train machine learning model
+    clf = MLPClassifier()
+    clf_2 = clf.fit(X_train_2, y_train_2)
+
+    # output machine learning model performance
+    predictions_2 = clf_2.predict(X_test_2)
+
+    #MODEL_3
+    # transform text into vectors
+    vectors_3 = model_3.transform(review_text)
+
+    # split data into training and test portions
+    X_train_3, X_test_3, y_train_3, y_test_3 = train_test_split(vectors_3, high_low)
+
+    # train machine learning model
+    clf = MLPClassifier()
+    clf_3 = clf.fit(X_train_3, y_train_3)
+
+    # Output machine learning model performance
+    predictions_3 = clf_3.predict(X_test_3)
+
+    # create a data frame with the models perfoamnce metrics scores
+    models_scores_table = pd.DataFrame({'glove':[accuracy_score(y_test_1,predictions_1).mean(),
+                                                precision_score(y_test_1,predictions_1).mean(),
+                                                recall_score(y_test_1,predictions_1).mean(),
+                                                f1_score(y_test_1,predictions_1).mean(),
+                                                roc_auc_score(y_test_1,predictions_1).mean()],
+                                       
+                                        'word2vec':[accuracy_score(y_test_2,predictions_2).mean(),
+                                                precision_score(y_test_2,predictions_2).mean(),
+                                                recall_score(y_test_2,predictions_2).mean(),
+                                                f1_score(y_test_2,predictions_2).mean(),
+                                                roc_auc_score(y_test_2,predictions_2).mean()],
+                                       
+                                        'fasttext':[accuracy_score(y_test_3,predictions_3).mean(),
+                                                precision_score(y_test_3,predictions_3).mean(),
+                                                recall_score(y_test_3,predictions_3).mean(),
+                                                f1_score(y_test_3,predictions_3).mean(),
+                                                roc_auc_score(y_test_3,predictions_3).mean()]},
+                                      
+                                        index=['Accuracy', 'Precision', 'Recall', 'F1 Score', 'AUC'])
+    
+    # add 'Best Score' column
+    models_scores_table['Best Score'] = models_scores_table.idxmax(axis=1)
+    
+    # return models performance metrics scores data frame
+    return(models_scores_table)
+```
+
+Through the use of these functions, were successfully able to run and compare 9 models in order to find a well performing one to create a sentiment monitoring system.
 
 ## 4.4 Assess Model [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 To assess model performance, we used accuracy, precision, recall, F1 score, and AUC as our performance metrics. The main metric we will use to determine the success of our model is AUC. AUC values between 0.9-1 we will consider excellent, AUC values between 0.8-0.9 we will consider good, AUC values between 0.7-0.8 we will consider fair, AUC values between 0.6-0.7 are poor, and any AUC values below 0.6 we will consider failed. Ideally, we would like to see a model performing in the range of 0.8-1 for all metrics.
