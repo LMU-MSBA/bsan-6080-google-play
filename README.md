@@ -454,6 +454,8 @@ The table above shows the performance of each deep learning model for predicting
 In conclusion, we were able to find a model that performed extremely well for both datasets, with scores all above .95. This reflects our ability to classify “high risk” reviews accurately.
 
 ## 5.2 Review Process [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
+We were able to create a machine learning model that predicts whether or not a review is considered “high-risk” and therefore needs to be responded to. This will allow for valuable insights to be generated for an app developer and allow that developer to address potential risks to ratings and app perception in a timely manner. 
 
+Coupled with our predictive model, we will also showcase descriptive analytics displayed in operational and analytical dashboards that will likewise showcase valuable insights to the app developer. All of this will promote the business and role of a Business Analyst for Play Partnerships at Google.
 
 ## 5.3 Determine Next Steps [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
