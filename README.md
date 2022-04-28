@@ -650,6 +650,9 @@ Next Steps:
 
 
 # Deployment Phase
+## 6.1 Plan Deployment
+Deployment Plan:
+
 ## 6.2 Plan Monitoring & Maintenance [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 
 Plan Monitoring & Maintenance: 
