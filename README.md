@@ -341,7 +341,6 @@ def lemmatizer(string):
 def finalpreprocess(string):
     return lemmatizer(stopword(preprocess(string)))
 df['clean_text'] = df['review_text'].apply(lambda x: finalpreprocess(x))
-df.head(2)
 ```
 
 ## 3.3 Construct Data [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
