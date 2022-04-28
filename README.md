@@ -31,6 +31,7 @@
 	* [5.2 Review Process](https://github.com/LMU-MSBA/bsan-6080-google-play#52-review-process-)
 	* [5.3 Determine Next Steps](https://github.com/LMU-MSBA/bsan-6080-google-play#53-determine-next-steps-)
 * [6. Deployment Phase](https://github.com/LMU-MSBA/bsan-6080-google-play#deployment-phase)
+	* [6.1 Plan Deployment](https://github.com/LMU-MSBA/bsan-6080-google-play/blob/main/README.md#61-plan-deployment-)
 	* [6.2 Plan Monitoring & Maintenance](https://github.com/LMU-MSBA/bsan-6080-google-play#62-plan-monitoring--maintenance-)
 
 # Sprint 1: 
@@ -650,7 +651,7 @@ Next Steps:
 
 
 # Deployment Phase
-## 6.1 Plan Deployment
+## 6.1 Plan Deployment [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 Deployment Plan:
 
 ## 6.2 Plan Monitoring & Maintenance [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
