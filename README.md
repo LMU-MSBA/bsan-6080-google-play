@@ -346,10 +346,6 @@ df['clean_text'] = df['review_text'].apply(lambda x: finalpreprocess(x))
 ## 3.3 Construct Data [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 In our main Google Play Store dataset, minimum installs and maximum install values were provided in the data, but to get an approximate and more specific install number we created a new value to interpolate the values and create an estimated installs field that we can use in our analysis. Originally, we tried creating an estimated value by taking min+max / 2, but after further consideration we determined interpolating the values would be a more accurate and appropriate way to represent estimates.
 
-For our Google Play Store Reviews and Google Play Store Food Delivery Reviews datasets, in order to conduct our analysis, we needed to create criteria on which we would base whether a review was “high risk” or not. We determined that a “high risk” review would have a low rating (a rating of 1 or 2), a polarity less than 0, and a subjectivity score greater than 0.5. A negative polarity indicates negative review sentiment. Higher subjectivity means that the text contains personal opinion rather than factual information. We created a binary variable called “high_risk_review,” where if the review met all of the criteria it would display a 1, else a 0. We felt this variable would give us a good representation of high risk reviews. We also felt it was very tailorable to fit the needs of an app owner, perhaps they want to be more or less strict on what they consider to be a “high risk” review.
-
-After creating the “high_risk_review” variable, we then checked the balance of the variable as it would be used as our label column in our analysis. We discovered it was very unbalanced. To correct this we used undersampling. After mitigating the skewness, we were now ready to start modeling.
-
 ## 3.4 Integrate Data [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 Main tables in the database are:
 * applications
