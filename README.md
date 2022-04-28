@@ -630,24 +630,22 @@ We were able to create a machine learning model that predicts whether or not a r
 Coupled with our predictive model, we will also showcase descriptive analytics displayed in operational and analytical dashboards that will likewise showcase valuable insights to the app developer. All of this will promote the business and role of a Business Analyst for Play Partnerships at Google.
 
 ## 5.2 Review Process [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
-* The first step of our process was to collect the necessary data for the text sentiment analysis and the EDA that was needed for the future steps and analyses in the project
-* The next step of our process consisted of cleaning and preparing the data for analysis 
-* Following the data cleaning, we built the models needed for analyzing both the general Google Play Store environment as well as the text sentiment analysis
-* After building the models we revisited how we can use the outputs in order to create dashboards that would be meaningful to a client or business partner / app developer
-* From here we came to conclusions that some of our original questions may need to change slightly and the direction we want to go will have to be pivoted 
-* We learned that the datasets may not fully achieve the goals we originally set out and to achieve a granular look like we originally desired, we may need to change either our goals or how we approach the data 
-* Once we determined the revised goals and came to a conclusion on how we want to use our outputs we set out on creating the dashboards and providing valuable insights from our data 
+The first step of our modeling process was to understand how we wanted to approach addressing our goals and determine what model would best be suited for accomplishing this.  Once we determined that text sentiment analysis was the best method for us to draw insights from reviews from the app store, we set out collecting the necessary data and building the model.  We collected the necessary data for the text sentiment analysis and the EDA that we would conduct through finding any available pre existing data and then researching how to web scrape reviews from the Google Play Store.  We were successful in finding sources online that provided guidance in how to web scrape from Google’s platform.  
+
+The next step of our process consisted of cleaning and preparing the data for analysis.  Due to having guidance from online sources as to how web scraping can be implemented, we were fortunate to have fairly clean data that required minimal cleaning and allowed us to begin EDA and implementation right away. 
+
+Following the data cleaning, we built the models needed for analyzing both the general Google Play Store environment as well as the text sentiment analysis. Once the models had been built and were running smoothly, we revisited how we can use the outputs in order to create dashboards that would be meaningful to a client or business partner or in this case an app developer.  This led to us coming to the conclusion that some of our original questions may need to change slightly and the direction we want to go will have to be pivoted.  We learned that the datasets may not fully achieve the goals we originally set out and to achieve a granular look like we originally desired, we may need to change either our goals or how we approach the data. Once we determined the revised goals and came to a conclusion on how we want to use our outputs, we set out on creating the dashboards and providing valuable insights from our data. 
+
 
 ## 5.3 Determine Next Steps [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
+With our models created, goals refined, and early stages of the dashboard creation begun, we can look towards our next steps as we progress further into the final stages of this project.  First and foremost, we will need to finalize our dashboards as those are at the center of our analysis and will guide us in creating business insights.  Once the dashboards have been created, we will need to review what is being visualized and what analysis and meaning can be drawn from the dashboards to provide a recommendation to our client.  Based on our results we will share how the client’s app is doing in relation to similar apps in their category and against the Google Play Store environment as a whole.  
 
-Next Steps:
-* Finalize dashboards for business insights
-* Evaluate dashboards in order to discern what recommendations we should offer
-* Evaluate how the ML and Deep Learning models can be improved and developed further by the client to provide a fuller picture from the analysis 
-* Construct final report that includes all insights, recommendations, and future action items 
-* Construct final presentation materials such as slides and examples of dashboards for the final deliverable
-* Review project to see where improvements can be made in the process and execution of tasks in the future
-* Continue tuning the model and the criteria based on success
+With the dashboards created and insights gained, we will then want to revisit the Machine Learning and Deep Learning models that were created in order to conduct the text sentiment analysis.  We would want to see how these models could be potentially improved for future use or see if there are any next steps for building the models out further for an even deeper analysis in the future.  
+
+After we review our models and dashboards, we will look to construct our final report and prepare for our presentation.  We will finalize all of the written material from the previous sprints in order to make a final report that can be created in the form of a GitHub ReadMe file.  The final presentation will require us to build a slide deck with all of our insights, dashboards, explanation of our data, and most importantly our conclusion and recommendations for our clients.  
+
+Finally, with the report and presentation completed, we evaluate how our project functioned as a whole.  We will need to review what went well and what should be improved upon for future projects of this nature.  Examining our progress and end result internally as a team will help us grow in our ability to manage projects and effectively apply skills we’ve learned to projects later in our careers. 
+
 
 
 # Deployment Phase
