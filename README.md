@@ -645,3 +645,9 @@ Next Steps:
 * Construct final presentation materials such as slides and examples of dashboards for the final deliverable
 * Review project to see where improvements can be made in the process and execution of tasks in the future
 * Continue tuning the model and the criteria based on success
+
+
+## 6.2 Plan Monitoring & Maintenance
+
+Plan Monitoring & Maintenance: 
+In order to maintain our data system in the future, a few systems would need to be implemented. First, we would need to be able to pull a more real time version of our Kaggle dataset that has high level metrics surrounding all apps on the google play store. We could then maintain this data through our AWS instance after it is dumped in through some sort of procedure that rights any additions or modifications to the table on some sort of cadence (daily, hourly, weekly, etc). Next, the organization would need to decide what would be the most beneficial form of continuing to update the machine learning models. We could decide if these insights are necessary for continued reporting or if data mining and machine learning models should be included only on an ad hoc basis. Once those decisions are made, Tableau will be able to refresh from our continually refreshing AWS PostgreSQL database. We can create Tableau report data extracts that update on a certain cadence or published Tableau Data Sources that will allow the team to see updated metrics that lead to more real time insight. This overall flow will need to be maintained by the team to ensure that bugs and other refresh errors are handled with care and timeliness. 
