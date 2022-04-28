@@ -397,16 +397,30 @@ WHERE a.app_id = 'com.anydo'
 
 # Modeling Phase
 ## 4.1 Selecting Modeling Techniquies [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
-
+The goal of our modeling phase is to add value to our dashboards by using the current variables to create richer ones with the help from some modeling. For model selection, we chose to conduct sentiment analysis. Sentiment analysis looks at the emotion expressed through text. This type of analysis would allow us to gain greater insight when it comes to customer opinions. Further, it would give us some more criteria to determine high risk reviews in the dataset, beyond simply looking at app ratings. This will help us identify how well DoorDash is doing when it comes to responding to agitated app users.
 
 ## 4.2 Generate Test Design [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
-
+With our sentiment analysis, our hope is to be able to calculate and understand the polarity and subjectivity of reviews in the dataset. Polarity is a measure of how positive or negative the text is. Polarity lies in the range of -1 to 1, where 1 means a positive statement and -1 means a negative statement. Subjectivity is a measure of the amount of personal opinion and factual information contained in the text. A higher subjectivity means that the text contains more personal opinion rather than factual information. Subjectivity lies in the range of 0 to 1. If we can calculate these scores and they can provide us with interesting patterns and results, our model will be a success.
 
 ## 4.3 Build Model [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
+To build our model we created two separate functions for computing polarity and subjectivity. We then applied them to our clean text column to give us a column for each with the calculated scores.
 
+```
+# create a function to get the subjectivity
+def subjectivity(text): 
+    return TextBlob(text).sentiment.subjectivity
+
+# create a function to get the polarity
+def polarity(text): 
+    return TextBlob(text).sentiment.polarity
+```
+
+We now had 2 new variables in the dataset we could continue analyzing through our dashboards. This included polarity scores and subjectivity scores. This also gave us new criteria to work with when considering a high risk review from a sentiment standpoint. We will discuss this more in our model assessment.
 
 ## 4.4 Assess Model [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
+As mentioned previously, a successful sentiment analysis would allow us to create additional variables that would allow for richer dashboards in the end. Specifically, we wanted to create a variable for high risk reviews. To determine high risk reviews in the dataset, we had to come up with criteria that took into account rating and sentiment scores. We determined that a “high risk” review would have a low rating (a rating of 1 or 2), a polarity less than 0, and a subjectivity score greater than 0.5. A negative polarity indicates negative review sentiment. Higher subjectivity means that the text contains personal opinion rather than factual information. 
 
+With our newly calculated sentiment scores, we created a binary variable called “high_risk_review,” where if the review met all of the criteria it would display a 1, else a 0. We felt this variable would give us a good representation of high risk reviews. We also felt that this variable could easily be tailored to fit the needs of an app owner, like DoorDash, perhaps they want to be more or less strict on what they consider to be a “high risk” review. We created plots to look into the distribution of high risk reviews in the dataset and distribution of replies to high risk reviews. Just from this quick look we were able to see there is a lot of room for improvement when it comes to replies and is something valuable to look further into. In the end we were happy with our model results and we are ready to include the variable for high risk reviews into our dashboards.
 
 # Evaluation Phase
 ## 5.1 Evaluate Results [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
