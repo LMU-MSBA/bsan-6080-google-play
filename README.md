@@ -66,20 +66,7 @@ Our first risk is that we could fall behind on sprints, throwing off our deadlin
 Our second risk is that we might have to find a new data set at some point during this project.  The contingency to this risk is that if we feel that we are missing data or certain variables that we need for analysis, then we may need to look for additional data sources.  We already see this being present in the need for review data.  The lack of reviews in the main Kaggle dataset means that we must web scrape our data to supplement our existing dataset.
  
 ### Terminology
-→ Description of each of the columns
-
-→ Digital marketing and app field
-
-→ Acquisition = installs
-
-→ Data mining
-
-→ Sentiment analysis 
-
-→ Ratings (goes back to description of the columns)
-
-→ Understanding of the terminology used in the data
-
+The terminology that will need to be understood relates to how the columns in our data are named as well as the need to know of digital marketing terms and terms related to app data and app stores. The description of the columns in our data are certainly key terms that will need to be kept in mind (Please note the Data Description in Sprint 2 for column names).  Other key terms that will need to be noted is the use of the word acquisition being frequently used by Google to represent app installs.  It will be important to know terminology surrounding data mining and web scraping, as that will be a key source for obtaining data.  In the modeling phase we will need to familiarize ourselves with the terms related to the topic of sentiment analysis.  Overall, we will need to understand the terms being used in the data and the terminology being used as we progress through our analysis.
 
 ### Costs and benefits
 → Time 
