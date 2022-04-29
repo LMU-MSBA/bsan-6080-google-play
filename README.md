@@ -76,11 +76,7 @@ Meanwhile, we also expect there to be many benefits that outweigh the cost facto
 ## 1.3 Determine Data Mining Goals [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 
 ### Data Mining Goals
-→ Mine data that allows us to analyze app reviews through text analytics 
-
-→ Find data that would supplement our original dataset in order to run machine learning models
-
-    → Possible ML:  kNN (Recommendation model) 
+The goals that we have for data mining are two fold.  First, we desire to mine data that allows us to analyze app reviews through text analysis, so that we can derive sentiment from those reviews.  Second, we want to find data that would appropriately supplement our original dataset in order to run machine learning models.  Possible machine learning models would include NLP, Word2Vec, or BERT in order to analyze our web scraped text data. 
 
 ### Data Mining Success Criteria
 → Demonstrating we can create an accurate and provide a recommendation or prediction that would supplement our original analysis, using the data we mined
