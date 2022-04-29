@@ -87,24 +87,7 @@ The success criteria that we have outlined for our data mining endeavors include
 The project plan that we have laid out includes the following.  First, we will organize regular team meetings to collaborate on items that need collective input.  This team meeting will also provide an opportunity for us to allocate tasks to each team member according to the Sprint guidelines.  To that end, our next step in the project plan is to ensure we are following the given Sprint schedule.  This will allow us to maintain a consistent timeline and allow us to not fall behind on tasks and deliverables.  Next, we will need to acknowledge and keep in mind our risks and contingencies throughout the duration of the project.  In order to avoid falling into any major pitfalls, being aware of risks can help our group move forward with our tasks smoothly. We will also need to be sure to set group deadlines before actual deadlines.  Meaning, as a group we will need to set deadlines that we will be held accountable for, so as not to leave all tasks to the last minute.  Finally, we will utilize communication tools such as Microsoft Teams to coordinate our operations and plan our regular meetings.  Having strong and frequent communication will allow us to remain in sync and succeed in this project.   
 
 ### Initial Assessment of Tools & Techniques:
-→ Tableau: Used for creating dashboards and analyzing KPIs
-
-→ Python:  Used to clean and manipulate/organize the data
-
-→ Machine Learning Models:  Used to do in depth predictive and recommendation analyses
-
-→ Text Analysis:  Used to analyze review data to come to a conclusion regarding customer sentiment
-
-→ Trello:  Used to organize the group and manage project goals/tasks
-
-→ Microsoft Teams:  Used to communicate with the group
-
-→ Excel:  Platform used for storing the CSV with our data
-
-→ Scrum:  Used for organizing team goals and deadlines
-
-→ CRISP-DM: Used for project management 
-
+As we begin our project, there are several tools and techniques that stand out.  Tableau will be used for creating dashboards and analyzing KPIs, playing a key role in what we present as a final product.  Similarly, Python will be used to conduct analysis while also being used to clean and manipulate our data.  Python will also be used in our machine learning models.  Our machine learning models will primarily be built in order to address the portion of our project we are devoting to text analysis.  Text analysis is going to be used to analyze app review data to come to a conclusion regarding customer sentiment.  A project management tool we will be utilizing is Trello, which will allow us to organize our tasks and manage project goals.  Microsoft Teams will be a tool used to compliment Trello so that we as a team can communicate and be better organized when it comes to project management.  Finally, two techniques that we hope to implement successfully to benefit the operation of this project are Scrum and CRISP-DM.  Scrum is a technique we will use to organize team meetings, goals, and deadlines we have for the various Sprints.  Likewise CRISP-DM will be used to manage the project specifically relating to the tasks we need to accomplish and guiding us in how we need to approach certain tasks related to our project.  
 
 # Sprint 2: 
 # Data Understanding Phase
