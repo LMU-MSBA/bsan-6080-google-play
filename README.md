@@ -84,17 +84,7 @@ The success criteria that we have outlined for our data mining endeavors include
 ## 1.4 Produce Project Plan [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 
 ### Project Plan: 
-→ Regular team meetings to collaborate on items that need team input and attribute tasks to each team member 
-
-→ Follow given sprint schedule 
-
-→ Acknowledge and keep in mind our risks and contingencies
-
-→ Set group deadlines before actual deadlines
-
-→ Prioritize using the Fibonacci Scale
-
-→ Utilize Microsoft Teams for coordinating
+The project plan that we have laid out includes the following.  First, we will organize regular team meetings to collaborate on items that need collective input.  This team meeting will also provide an opportunity for us to allocate tasks to each team member according to the Sprint guidelines.  To that end, our next step in the project plan is to ensure we are following the given Sprint schedule.  This will allow us to maintain a consistent timeline and allow us to not fall behind on tasks and deliverables.  Next, we will need to acknowledge and keep in mind our risks and contingencies throughout the duration of the project.  In order to avoid falling into any major pitfalls, being aware of risks can help our group move forward with our tasks smoothly. We will also need to be sure to set group deadlines before actual deadlines.  Meaning, as a group we will need to set deadlines that we will be held accountable for, so as not to leave all tasks to the last minute.  Finally, we will utilize communication tools such as Microsoft Teams to coordinate our operations and plan our regular meetings.  Having strong and frequent communication will allow us to remain in sync and succeed in this project.   
 
 ### Initial Assessment of Tools & Techniques:
 → Tableau: Used for creating dashboards and analyzing KPIs
