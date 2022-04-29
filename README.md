@@ -183,7 +183,7 @@ Google Reviews Scrape: https://colab.research.google.com/drive/1jLlPrux8C4x_kxdt
 
 ## 2.4 Verify Data Quality [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 ### Data Quality Report
-→ Data Quality and Data Exploration included in same Python notebooks
+After doing basic data exploration, we made sure to address the data quality.  In this step we made sure the data consisted of all the variables we needed to run our analysis and proceed with the project.  Once the data content was deemed satisfactory, we began looking at what data cleaning steps would need to be taken.  We addressed data cleaning issues like null values, incorrect or unhandy data types, and the need to interpolate certain values.  Once data cleaning steps were addressed to ensure our data was at its highest quality, we were ready to proceed with the next stages of our project consisting of data modeling and analysis.  (The below notebooks are the same as the Data Exploration notebooks, for ease of use we kept Data Exploration and Data Quality in the same Python notebook)
 
 Kaggle Google Playstore: https://colab.research.google.com/drive/1Nk2vDVvqLUrBaeQooCGDI6F0QJtTJdJB?usp=sharing
 
