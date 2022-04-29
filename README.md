@@ -51,19 +51,11 @@ Our success criteria consists of KPIs and goals that we are aiming to achieve in
 Resources that we will utilize in our project include the people around us as well as tools and information found on the internet.  Human resources that will be key to the success of our project are our professors and advisors.  This includes the professor for this course Greg Lontok and other professors from other courses we are currently enrolled in.  Utilizing the group element of this group project, we will also be able to rely on each other for support and help should one of us ever get stuck on a task.  Tableau, Python, and SQL will be our key tools for analyzing the data and uncovering the necessary insights we are looking to find.  Project management tools will also be key to our success, including resources such as Trello and GitHub to organize our final assessment.  Since the business we are looking into is Google, we should be able to find plenty of information about the company readily at our fingertips through doing a quick internet search.  Likewise, through using the internet we can gain a better understanding and knowledge base about the Google Play Store.  
 
 ### Requirements, assumptions, and constraints
-→ List sprints and what is due 
+The requirements that will need to be completed on a regular basis will be recorded through the list of sprints that are required to be completed for this project.  They will be completed according to their due dates.  
 
-→ Assuming correct and error-free data was pulled by Gautham 
+Assumptions that we will need to make for this project are first, that the author of the Kaggle dataset we are using is pulling the data correctly from the Google Play Store.  After researching some web scraping of the Google Play Store, we are confident and comfortable in making the assumption that the Kaggle dataset was created correctly.  The second assumption is that we will need to assume that the Google Play Store monetizes on installs and in-app purchases.  With these two fields being looked at as potential KPIs, it is important for them to truly have an impact on Google.
 
-→ Assuming Google Play monotizes on installs and in-app purchases 
-
-→ Availability of resources
-
-→ Lack of transparency in some columns (ex: in-app purchases is boolean) 
-
-→ Review text is not included in the dataset, so we must scrape the text ourselves
-
-→ Lack of transparency on full funnel (we are only seeing the middle of the funnel like inventory data and user in app purchase data is not available)
+The constraints we face include first, the availability of resources.  We are limited to ourselves, our professors, and the internet.  It will likely be difficult to find a primary source at Google who can provide data or help for this project.  Another constraint is that the review text is not included in the main Kaggle dataset, therefore we will need to do web scraping in order to source those records.  Finally, another constraint is that we are looking at a very specific segment of the marketing funnel with little transparency to other aspects of the funnel.  For example we can see the number of installs, but the marketing that is taking place at the top of the funnel to get those installs is not made known to us through our data.  
  
 ### Comprehensibility:
 
