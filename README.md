@@ -48,17 +48,7 @@ Our success criteria consists of KPIs and goals that we are aiming to achieve in
 
 ## 1.2 Assess Situation [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 ### Inventory of resources
-→ Greg Lontok 
-
-→ Gautham (author of Kaggle dataset)
-
-→ Tableau, Python, Trello, Project Management 
-
-→ Fellow group members  
-
-→ Google Play Store and Google
-
-→ Other faculty and coding reference materials for Machine Learning and Text Analysis
+Resources that we will utilize in our project include the people around us as well as tools and information found on the internet.  Human resources that will be key to the success of our project are our professors and advisors.  This includes the professor for this course Greg Lontok and other professors from other courses we are currently enrolled in.  Utilizing the group element of this group project, we will also be able to rely on each other for support and help should one of us ever get stuck on a task.  Tableau, Python, and SQL will be our key tools for analyzing the data and uncovering the necessary insights we are looking to find.  Project management tools will also be key to our success, including resources such as Trello and GitHub to organize our final assessment.  Since the business we are looking into is Google, we should be able to find plenty of information about the company readily at our fingertips through doing a quick internet search.  Likewise, through using the internet we can gain a better understanding and knowledge base about the Google Play Store.  
 
 ### Requirements, assumptions, and constraints
 → List sprints and what is due 
