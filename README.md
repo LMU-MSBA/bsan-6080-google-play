@@ -44,11 +44,7 @@ Our mission is connecting the right third-party app and game developers with the
 Our main business objective is to help app owners in the Food Delivery Category determine how well they are doing as a brand.  We also would like to understand the product sentiment surrounding these brands, by analyzing the reviews that are left for that specific app or app category.  To provide app developers with the best insights, we will also need to conduct an overall analysis of the Google Playstore in order to create meaningful results that allow a business to take action.  
 
 ### Business Success Criteria
-→ Data pipeline that connects cleaned data to our business intelligence visualization and modeling tools
-
-→ Tableau dashboard for high level view of the KPIs
-
-→ Python Model to provide recommendations to key stakeholders based on historical data
+Our success criteria consists of KPIs and goals that we are aiming to achieve in order to deliver a strong result to our client, the Google Play Store partner. Examples of metrics that we will look at as KPIs include: ratings, rating counts, installs, and sentiment towards apps.  In order to showcase these success metrics, we will need to build dashboards using Tableau that provide views into how a certain app or app category is performing in the Google Play Store environment.  Using historical data, we will also utilize Python to model our sentiment analysis, making a properly running model a pivotal element of our business success criteria.  
 
 ## 1.2 Assess Situation [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 ### Inventory of resources
