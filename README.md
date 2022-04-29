@@ -79,9 +79,7 @@ Meanwhile, we also expect there to be many benefits that outweigh the cost facto
 The goals that we have for data mining are two fold.  First, we desire to mine data that allows us to analyze app reviews through text analysis, so that we can derive sentiment from those reviews.  Second, we want to find data that would appropriately supplement our original dataset in order to run machine learning models.  Possible machine learning models would include NLP, Word2Vec, or BERT in order to analyze our web scraped text data. 
 
 ### Data Mining Success Criteria
-→ Demonstrating we can create an accurate and provide a recommendation or prediction that would supplement our original analysis, using the data we mined
-
-→ Successfully run some type of sentiment analysis on review data mined from the Google Play Store
+The success criteria that we have outlined for our data mining endeavors includes the following.  We seek to demonstrate we can create an accurate model from our mined data and provide a recommendation or prediction that would supplement our original analysis.  Likewise, we aspire to successfully run some type of sentiment analysis on review data mined from the Google Play Store, fulfilling the intended need for the web scraped data.  
 
 ## 1.4 Produce Project Plan [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 
