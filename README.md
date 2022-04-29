@@ -61,13 +61,9 @@ The constraints we face include first, the availability of resources.  We are li
 
  
 ### Risks and contingencies
-→ Risk: Falling behind on the sprints 
+Our first risk is that we could fall behind on sprints, throwing off our deadlines and our overall final assessment.  The contingency to this risk is that we must maintain our schedule in Trello and let our team members know if we are falling behind on a task.  The communication regarding progress will be pivotal in ensuring we do not fall behind and we as a team can help each other succeed.
 
-    → Contingency: We must maintain our schedule and let our team members know if we are falling behind on something
-  
-→ Risk: Might have to find a new data set
-
-    → Contingency: If we feel that we are missing data or certain variable we need for analysis, we may need to look for additional data sources
+Our second risk is that we might have to find a new data set at some point during this project.  The contingency to this risk is that if we feel that we are missing data or certain variables that we need for analysis, then we may need to look for additional data sources.  We already see this being present in the need for review data.  The lack of reviews in the main Kaggle dataset means that we must web scrape our data to supplement our existing dataset.
  
 ### Terminology
 → Description of each of the columns
