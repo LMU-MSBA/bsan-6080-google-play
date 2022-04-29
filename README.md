@@ -94,6 +94,8 @@ As we begin our project, there are several tools and techniques that stand out. 
 ## 2.1 Collect Initial Data [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 
 ### Initial Data Collection Report
+The following locations are where our collected data is located.  This includes both the Kaggle dataset we found as well as two notebooks used for web scraping app reviews.    
+
 → Google Reviews Scrape: https://colab.research.google.com/drive/1jLlPrux8C4x_kxdt5lzTnD3LxnIRpkC5?usp=sharing
 
 → Food Delivery App Reviews Scraping: https://colab.research.google.com/drive/15MfyTemDVcDCmTipgLCaMS_RIAUepJuH?usp=sharing
