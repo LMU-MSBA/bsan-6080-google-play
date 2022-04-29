@@ -171,7 +171,7 @@ The below report showcases the columns and data types for our datasets.  These a
 
 ## 2.3 Explore Data [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 ### Data Exploration Report
-→  Data Quality and Data Exploration included in same Python notebooks
+In the early data exploration phase of this project we looked at the three datasets and ran simple analyses in Python to get a better understanding of how we can work with the data.   Using charts and graphs to visually represent columns and variables in the data we can easily and clearly interpret any trends or noticeable callouts in the data.  Through doing basic data exploration one can often find data quality issues, leading into the next section of Sprint 2.
 
 Kaggle Google Playstore: https://colab.research.google.com/drive/1Nk2vDVvqLUrBaeQooCGDI6F0QJtTJdJB?usp=sharing
 
