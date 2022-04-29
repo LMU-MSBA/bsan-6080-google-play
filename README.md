@@ -41,12 +41,7 @@
 Our mission is connecting the right third-party app and game developers with the right opportunities at the right time.  We will be part of the Google Play Partnerships team, focused on helping strategic Google partners have successful businesses using Google Play and the Android platform.  Google Play Store makes money from in-app purchases, cost to download the app, and advertising within the play store. 
 
 ### Business Objectives: 
- 1. Determinants of install 
- 2. Number of installs vs. ratings
- 3. Under performing apps
- 4. App Categories
- 5. Who is performing well and what do they have in common? Who isn’t performing well and why do they underperform?
-
+Our main business objective is to help app owners in the Food Delivery Category determine how well they are doing as a brand.  We also would like to understand the product sentiment surrounding these brands, by analyzing the reviews that are left for that specific app or app category.  To provide app developers with the best insights, we will also need to conduct an overall analysis of the Google Playstore in order to create meaningful results that allow a business to take action.  
 
 ### Business Success Criteria
 → Data pipeline that connects cleaned data to our business intelligence visualization and modeling tools
