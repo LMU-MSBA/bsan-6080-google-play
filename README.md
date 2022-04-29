@@ -69,17 +69,9 @@ Our second risk is that we might have to find a new data set at some point durin
 The terminology that will need to be understood relates to how the columns in our data are named as well as the need to know of digital marketing terms and terms related to app data and app stores. The description of the columns in our data are certainly key terms that will need to be kept in mind (Please note the Data Description in Sprint 2 for column names).  Other key terms that will need to be noted is the use of the word acquisition being frequently used by Google to represent app installs.  It will be important to know terminology surrounding data mining and web scraping, as that will be a key source for obtaining data.  In the modeling phase we will need to familiarize ourselves with the terms related to the topic of sentiment analysis.  Overall, we will need to understand the terms being used in the data and the terminology being used as we progress through our analysis.
 
 ### Costs and benefits
-→ Time 
+Through undertaking this project we anticipate that there will be certain costs and benefits derived as outcomes from this project.  The main will be time.  We expect this thorough analysis into the Google Play Store will take an ample amount of time in order to glean the insights that we desire from the data.  
 
-→ Insights gleaned 
-
-→ Benefit to Google because it gives factual and data-driven insights that can help the play store better understand developer needs
-
-→ Benefit to developers 
-
-→ Benefit to the people
-
-→ Benefit to us in workforce (experience)
+Meanwhile, we also expect there to be many benefits that outweigh the cost factor.  This will be a benefit to Google because it gives factual and data-driven insights that can help the play store better understand developer needs.  This project will likewise benefit the developers as they will be able to draw valuable insights into not only their app but also the Google Play Store environment as a whole.  Finally, this will be a benefit to us as a team since this project will provide valuable experience that we need to start our careers and will act as a strong resume builder.   
 
 ## 1.3 Determine Data Mining Goals [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 
