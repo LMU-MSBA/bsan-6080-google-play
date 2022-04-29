@@ -108,6 +108,7 @@ The following links are where our collected data is located.  This includes both
 
 ## 2.2 Describe Data [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 ### Data Decription Report
+The below report showcases the columns and data types for our datasets.  These are the main tables that will be used for our project and analysis.  Upon completion of Sprint 3 the data will be placed into an AWS database for easy querying of data through SQL or Tableau.
 
 **applications Table (603,047 Rows)**
 | PK/FK      | Name | Data Type |
