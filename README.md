@@ -378,5 +378,7 @@ Final Presentation Link:
 Experience Documentation:
 
 What should we start doing?: Our group feels that, although we enjoyed the two week sprint system, the workload of the 2 week periods was inbalanced. If we had the ability to start earlier on the first few sprints (or combine 1 and 2 into one 2 week sprint), then we would be able to break up sprint 3 into more approachable and digestible chunks. 
-What should we stop doing?: The project description was very comprehensive and in some places repetitive. If the project descritpion and some of the sprints were more succinct this might have been beneficial for the project overall. 
+
+What should we stop doing?: The project description was very comprehensive and in some places repetitive. If the project description and some of the sprints were more succinct this might have been beneficial for the project overall. 
+
 What should we continue doing?: The project management portion of this project is great for our group to be able to hone our skills regarding working in an Agile environment. The freedom to pick a specific job to tailor our project to was also helpful. Our group also benefited from regular meeting times. This scheduled system allowed us to stay on track throughout the project and assign tasks via Trello to be done before or after these meetings. 
