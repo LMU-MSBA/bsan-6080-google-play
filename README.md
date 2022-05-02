@@ -33,6 +33,8 @@
 * [6. Deployment Phase](https://github.com/LMU-MSBA/bsan-6080-google-play#deployment-phase)
 	* [6.1 Plan Deployment](https://github.com/LMU-MSBA/bsan-6080-google-play/blob/main/README.md#61-plan-deployment-)
 	* [6.2 Plan Monitoring & Maintenance](https://github.com/LMU-MSBA/bsan-6080-google-play#62-plan-monitoring--maintenance-)
+	* [6.3 Product Final Report](https://github.com/LMU-MSBA/bsan-6080-google-play/blob/main/README.md#63-product-final-report-)
+	* [6.4 Review Project](https://github.com/LMU-MSBA/bsan-6080-google-play#64-review-project-)
 
 # Sprint 1: 
 # Business Understanding Phase
