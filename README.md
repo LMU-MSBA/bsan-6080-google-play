@@ -368,3 +368,13 @@ Deployment Plan:
 
 Plan Monitoring & Maintenance: 
 In order to maintain our data system in the future, a few systems would need to be implemented. First, we would need to be able to pull a more real time version of our Kaggle dataset that has high level metrics surrounding all apps on the google play store. We could then maintain this data through our AWS instance after it is dumped in through some sort of procedure that rights any additions or modifications to the table on some sort of cadence (daily, hourly, weekly, etc). Next, the organization would need to decide what would be the most beneficial form of continuing to update the machine learning models. We could decide if these insights are necessary for continued reporting or if data mining and machine learning models should be included only on an ad hoc basis. Once those decisions are made, Tableau will be able to refresh from our continually refreshing AWS PostgreSQL database. We can create Tableau report data extracts that update on a certain cadence or published Tableau Data Sources that will allow the team to see updated metrics that lead to more real time insight. This overall flow will need to be maintained by the team to ensure that bugs and other refresh errors are handled with care and timeliness. 
+
+## 6.3 Product Final Report [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
+Final Presentation Link:
+
+## 6.4 Review Project [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
+Experiance Documentation:
+
+What should we start doing?
+What should we spot doing?
+What should we continue doing?
