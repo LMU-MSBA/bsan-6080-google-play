@@ -375,8 +375,8 @@ In order to maintain our data system in the future, a few systems would need to 
 Final Presentation Link:
 
 ## 6.4 Review Project [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
-Experiance Documentation:
+Experience Documentation:
 
-What should we start doing?
-What should we spot doing?
-What should we continue doing?
+What should we start doing?:
+What should we stop doing?:
+What should we continue doing?:
