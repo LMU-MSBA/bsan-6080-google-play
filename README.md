@@ -377,7 +377,7 @@ Final Presentation Link:
 ## 6.4 Review Project [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 Experience Documentation:
 
-What should we start doing?: Our group feels that, although we enjoyed the two week sprint system, the workload of the 2 week periods was inbalanced. If we had the ability to start earlier on the first few sprints (or combine 1 and 2 into one 2 week sprint), then we would be able to break up sprint 3 into more approachable and digestible chunks. 
+What should we start doing?: Our group feels that, although we enjoyed the two week sprint system, the workload of the 2 week periods was inbalanced. If we had the ability to start earlier on the first few sprints (or combine sprint #1 and 2 into one sprint), then we would be able to break up sprint 3 into more approachable and digestible chunks. 
 
 What should we stop doing?: The project description was very comprehensive and in some places repetitive. If the project description and some of the sprints were more succinct this might have been beneficial for the project overall. 
 
