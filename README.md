@@ -366,6 +366,36 @@ Finally, with the report and presentation completed, we evaluate how our project
 ## 6.1 Plan Deployment [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 Deployment Plan:
 
+**Google Playstore Performance Dashboard**: 
+
+Business Question: Overall, can you provide a holistic description of what apps are in all of Google Playstore?
+
+Answer: Used by a person who is interested in total Google Playstore performance, this dashboard displays apps by various characteristics to the end user.  Those characteristics being ad supported, Editor's Choice, rating, release year, category, and number of installs.  The user can also see the number of new apps released by year, categories with highest installs, apps with highest installs and number of apps by rating. 
+
+**Food Delivery Summary Dashboard**: 
+
+Business Question: Provide a description of the food delivery app category. We would also like to see a comparison of 11 trending food delivery apps.  
+
+Answer: The dasboard provides total apps in the food delivery category, along with their combined average rating.  The user can see the percentage of all all apps that the food delivery category represents and the percentage of all installs.  They can also see the growth of this category year over year. The second half of the dashboard highlights the 11 popular food apps the user requested.  It shows the comparison of these apps based on average rating, average installs, total reviews and the percentage of reviews that are high risk.     
+
+**Food Delivery Reviews Dashboard**: 
+
+Business Question: What reviews are at risk and which at risk reviews have already been responded to? 
+
+Answer: This operational dashboard focuses on at-risk reviews. It allows the user to track reviews that have been responded to and their corresponding polarity and subjectivity as well as at-risk reviews that still need a response and their corresponding polarity and subjectivity.  The user can also see these reviews by app.  
+
+**Application Insights Analytical Dashboard**: 
+
+Business Question: I want to see all the Google Playstore information by a variety of filters.  
+
+Answer: This dashboard is the most flexible and responsive to the user and their unique needs.  Using a variety of filters, the user can generate a list of apps by those said filters.   
+
+**DoorDash App Summary**: 
+
+Business Question: (Request from DoorDash Developer) We want to see how our app is performing overall.  Please include our app logistics as well as the insights you can give us from our total reviews.  
+
+Answer: With the end user being DoorDash, we have included the app cheat sheet as a banner which specifies the category, star rating, if the app is ad supported and the total installs.  To satisfy the request for a review summary, we have included the breakdown of review sentiment, the number of reviews over time, the number of reviews per rating and the review text itself.   
+
 ## 6.2 Plan Monitoring & Maintenance [↑](https://github.com/LMU-MSBA/bsan-6080-google-play#table-of-content)
 
 Plan Monitoring & Maintenance: 
